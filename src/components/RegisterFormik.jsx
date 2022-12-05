@@ -4,6 +4,7 @@ import * as Yup from "yup";
 
 // models
 import { ROLES } from "../models/roles.enum";
+import "../styles/form.css";
 
 const RegisterFormik = () => {
   const initialValues = {
@@ -34,18 +35,18 @@ const RegisterFormik = () => {
   });
 
   return (
-    <div>
+    <div className="wrapper">
       <h4>Register Formik</h4>
       <Formik
         initialValues={initialValues}
         validationSchema={registerSchema}
         onSubmit={async (values) => {
-          await new Promise((r) => setTimeout(r, 2000));
+          await new Promise((r) => setTimeout(r, 1000));
           alert(JSON.stringify(values, null, 2));
         }}
       >
         {({ values, touched, errors, isSubmitting }) => (
-          <Form>
+          <Form className="form">
             <label htmlFor="username">Username</label>
             <Field
               id="username"

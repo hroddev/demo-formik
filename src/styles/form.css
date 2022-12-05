@@ -1,0 +1,48 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.wrapper h4 {
+    font-size: large;
+    font-weight: 700;
+    margin: auto;
+    margin-bottom: .5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    gap: .25rem;
+}
+.form label {
+    font-size: small;
+    color: rgba(0, 0, 255, 0.727);
+    margin-top: 0.5rem;
+}
+
+.form input {
+    padding: .75rem;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
+.form div {
+    color: red;
+    font-size: small;
+}
+
+.form button {
+    margin-top: .75rem;
+    border: none;
+    padding: 1rem 0;
+    background-color: rgb(31, 31, 209);
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}

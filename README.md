@@ -6,3 +6,9 @@ Formik para el formulario.
 
 Yup para las validaciones.
 
+___
+## Capturas de pantalla
+![Captura1](./public/img/captura1.png)
+![Captura2](./public/img/captura2.png)
+![Captura3](./public/img/captura3.png)
+
